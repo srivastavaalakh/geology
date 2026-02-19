@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Droplets, FlaskConical, Mountain, Waves, BookOpen, Users, Microscope, Award } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "../assets/hero-bg.jpg";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import SectionReveal from "@/components/SectionReveal";
 import SectionHeader from "@/components/SectionHeader";
