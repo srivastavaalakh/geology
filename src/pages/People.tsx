@@ -181,8 +181,8 @@ const People = () => {
               </div>
               <div className="text-center md:text-left space-y-3">
                 <h3 className="font-display text-2xl md:text-3xl font-bold">Prof. Brijesh Kumar Yadav</h3>
-                <p className="text-aqua-dark font-medium">
-  Professor, Department of Hydrology, IIT Roorkee
+               <p className="text-aqua-dark font-medium">
+  Associate Professor, Department of Hydrology, IIT Roorkee
 </p>
                 <p className="text-muted-foreground text-sm leading-relaxed max-w-xl">
                   Expert in groundwater contamination, subsurface hydrology, hydrogeophysics, and environmental remediation technologies. Leading the lab's mission to advance water resource science through cutting-edge research and innovation.
