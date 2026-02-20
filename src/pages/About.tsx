@@ -97,7 +97,7 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="font-display text-2xl font-bold">Prof. Brijesh Kumar Yadav</h3>
-                  <p className="text-aqua-dark font-medium mb-3">Associate Professor, Department of Hydrology</p>
+                  <p className="text-aqua-dark font-medium mb-3">Professor, Department of Hydrology</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                     Prof. Yadav leads the Groundwater Quality and Quantity Laboratory with expertise in 
                     groundwater contamination, subsurface hydrology, and environmental remediation. 
