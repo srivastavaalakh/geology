@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-lg border-b border-border/50 shadow-sm">
       <div className="section-container flex items-center justify-between h-16 lg:h-20">
         <Link to="/" className="flex items-center gap-3 shrink-0">
-          <img src={logo} alt="GW Lab Logo" className="h-10 lg:h-14 w-auto" />
+          <img src={logo} alt="GW Lab Logo" className="w-32 lg:w-48 h-auto" />
         </Link>
 
         {/* Desktop */}
