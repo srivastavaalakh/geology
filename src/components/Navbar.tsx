@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import logo from "../assests/logo.png";
 
 const navLinks = [
@@ -21,12 +21,20 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-lg border-b border-border/50 shadow-sm">
-      <div className="section-container flex items-center justify-between h-16 lg:h-20">
-        <Link to="/" className="flex items-center gap-3 shrink-0">
-          <img src={logo} alt="GW Lab Logo" className="h-12 lg:h-16 w-auto object-contain" />
+      
+      {/* Navbar Container */}
+      <div className="section-container flex items-center justify-between h-16 lg:h-20 px-4">
+
+        {/* Logo */}
+        <Link to="/" className="flex items-center shrink-0">
+          <img
+            src={logo}
+            alt="GW Lab Logo"
+            className="h-14 lg:h-16 w-auto object-contain"
+          />
         </Link>
 
-        {/* Desktop */}
+        {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) => (
             <Link
@@ -43,19 +51,19 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile toggle */}
+        {/* Mobile Toggle Button */}
         <button
           onClick={() => setOpen(!open)}
-          className="lg:hidden p-2 rounded-lg text-foreground hover:bg-muted"
+          className="lg:hidden p-2 rounded-lg text-foreground hover:bg-muted transition"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       {open && (
         <div className="lg:hidden bg-card border-t border-border">
-          <div className="section-container py-4 space-y-1">
+          <div className="section-container py-4 space-y-1 px-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
