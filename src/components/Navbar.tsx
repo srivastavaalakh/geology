@@ -25,8 +25,7 @@ const Navbar = () => {
       {/* Navbar Container */}
     <div className="section-container flex items-center justify-between h-24 lg:h-28 px-4">
         {/* Logo */}
-      <Link to="/" className="flex items-center shrink-0 py-1 bg-transparent">
-         <img
+  <Link to="/" className="flex items-center shrink-0 py-1 bg-card">
   src={logo}
   alt="GW Lab Logo"
   className="h-20 lg:h-24 w-auto object-contain"
